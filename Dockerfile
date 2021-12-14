@@ -2,6 +2,7 @@ FROM alpine AS download
 
 WORKDIR /root
 
+# TODO install kubectl from alpine's repository once it is in mainline
 RUN apk add --no-cache curl
 RUN curl -LO https://dl.k8s.io/release/v1.22.0/bin/linux/amd64/kubectl
 RUN chmod 755 kubectl
