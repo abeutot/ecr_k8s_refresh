@@ -96,5 +96,7 @@ spec:
                     key: AWSSecretAccessKey
               - name: AWS_DEFAULT_REGION
                 value: "CHANGEME"
+              - name: K8S_NAMESPACES
+                value: example
           serviceAccountName: ecr-refresh
           restartPolicy: OnFailure

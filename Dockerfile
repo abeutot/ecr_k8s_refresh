@@ -12,6 +12,7 @@ FROM alpine
 ENV AWS_ACCESS_KEY_ID=""
 ENV AWS_SECRET_ACCESS_KEY=""
 ENV AWS_DEFAULT_REGION=""
+ENV K8S_NAMESPACES="default"
 
 RUN apk add --no-cache aws-cli jq
 
